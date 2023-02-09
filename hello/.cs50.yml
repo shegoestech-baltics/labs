@@ -1,3 +1,11 @@
+check50: 
+  files: &check50_files
+    - !exclude "*"
+    - !require hello.c
+
+submit50:
+  files: *check50_files
+
 lab50:
   files:
     - !exclude "*"
